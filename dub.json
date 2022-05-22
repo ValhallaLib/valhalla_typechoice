@@ -1,0 +1,26 @@
+{
+	"authors": [
+		"Joao Lourenco"
+	],
+	"copyright": "Copyright © 2022, Joao Lourenco",
+	"description": "Offers utility and error handling types that work around std.sumtype.",
+	"importPaths": [ "source" ],
+	"license": "BSL-1.0",
+	"name": "vtypechoice",
+	"sourcePaths": [ "source" ],
+	"targetPath": "bin",
+	"targetName": "vtypechoice",
+	"targetType": "library",
+	"configurations": [
+		{
+			"name": "unittest-safe",
+			"dflags": [ "-preview=dip1000", "-preview=in" ],
+			"buildRequirements": [ "allowWarnings" ],
+			"versions": [ "vtypechoice_unittest" ]
+		},
+		{
+			"name": "unittest",
+			"versions": [ "vtypechoice_unittest" ]
+		}
+	]
+}
